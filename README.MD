@@ -1,26 +1,37 @@
-# AI-Bot-Agent
+# Edge of Stability — Ford Ranger Price Trend Analysis
 
-Automated voice testing system that places phone calls to a clinic receptionist AI, simulates patient conversations, saves transcripts, and generates bug reports using OpenAI.
+Linear regression model built from scratch to analyze and predict Ford Ranger prices (2012–2018) using gradient descent with and without feature scaling.
+
+## What This Project Does
+
+- Implements linear regression manually using NumPy (no sklearn)
+- Predicts missing Ford Ranger prices for 2012–2018
+- Compares baseline (unscaled) vs feature-scaled gradient descent
+- Uses dynamic learning rate for faster convergence
+- Predicts 2026 Ford Ranger price range: **$27,119 – $42,608**
 
 ## Tech Stack
-- FastAPI — webhook server
-- Twilio — telephony and speech processing
-- OpenAI — transcript analysis and bug detection
-- Railway — cloud deployment
+- Python
+- NumPy
+- Matplotlib
+- Google Colab
 
-## Setup
+## Key Results
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Create a `.env` file with:
-```
-TWILIO_ACCOUNT_SID=
-TWILIO_AUTH_TOKEN=
-TWILIO_FROM_NUMBER=
-TARGET_NUMBER=
-PUBLIC_BASE_URL=
-OPENAI_API_KEY=
-```
-3. Start the server: `uvicorn app:app --host 0.0.0.0 --port 5000`
-4. Run a test call: `python twilio_test_call.py`
-5. Run 10 calls: `python test_10calls.py`
-6. Generate bug report: `python bug_analyzer.py`
+| Year | Predicted Min | Predicted Max |
+|------|--------------|---------------|
+| 2012 | $17,427 | $28,882 |
+| 2015 | $19,504 | $31,823 |
+| 2018 | $21,581 | $34,765 |
+| 2026 | $27,119 | $42,608 |
+
+## Concepts Covered
+- Gradient descent (manual implementation)
+- Feature scaling / standardization
+- Dynamic learning rate
+- Loss curve visualization
+- Linear hypothesis function: `f(x) = θ₀ + θ₁x`
+
+## How to Run
+
+Open `Project_01.ipynb` in Google Colab and run all cells.
