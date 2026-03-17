@@ -1,10 +1,9 @@
-# Contributing to AI-Bot-Agent
+# Contributing to Edge of Stability
 
 ## Getting Started
 1. Fork the repository
-2. Clone: `git clone https://github.com/kavyahj04/AI-Bot-Agent`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Create `.env` with required variables
+2. Clone: `git clone https://github.com/kavyahj04/edge-of-stability`
+3. Open `Project_01.ipynb` in Google Colab or Jupyter
 
 ## Making Changes
 - Create a branch: `git checkout -b feature/your-feature-name`
